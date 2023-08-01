@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  background-color: hsl(212, 45%, 89%);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.qr-container {
+  height: 497px;
+  width: 320px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.qr-container img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.qr-container h2 {
+  font-weight: bold;
+  color: hsl(218, 44%, 22%);
+}
+
+.qr-container p {
+  font-weight: 400;
+  color: hsl(220, 15%, 55%);
+}
