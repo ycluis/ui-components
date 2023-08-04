@@ -109,12 +109,12 @@ body {
   margin-top: 20px;
 }
 
-.state-wrapper h3,
-.state-wrapper p {
+.stats-wrapper h3,
+.stats-wrapper p {
   margin: 0;
 }
 
-.state-wrapper p {
+.stats-wrapper p {
   font-size: 16px;
 }
 
