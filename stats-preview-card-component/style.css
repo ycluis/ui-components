@@ -94,12 +94,14 @@ body {
   width: 100%;
   height: 100%;
   background-color: hsl(277, 64%, 61%);
-  opacity: 0.5;
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+  border-radius: 0 5px 5px 0;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1110px) {
   .content-container {
     height: 780px;
     width: 327px;
