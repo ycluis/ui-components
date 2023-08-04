@@ -55,10 +55,11 @@ body {
 
 .stats-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
   text-align: center;
   margin-top: 50px;
+  gap: 20%;
 }
 
 .stats-wrapper p {
