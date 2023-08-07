@@ -1,0 +1,135 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  width: 635px;
+  height: 475px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.header {
+  text-align: left;
+  padding: 1.5rem 2rem;
+  height: 50%;
+}
+
+.header h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+.header h3 {
+  color: hsl(71, 73%, 54%);
+}
+
+.header p {
+  color: #9aa7be;
+}
+
+.content {
+  display: flex;
+  color: #fff;
+  height: 50%;
+}
+
+.subscription {
+  background-color: hsl(179, 62%, 43%);
+  padding: 2rem;
+  flex-basis: 50%;
+  text-align: left;
+  border-radius: 0 0 0 8px;
+}
+
+.subscription h3 {
+  margin-top: 0;
+}
+
+.subscription h1 {
+  margin-bottom: 0;
+}
+
+.subscription p {
+  margin-top: 10px;
+}
+
+.subscription span {
+  font-size: 16px;
+  color: #efefef;
+}
+
+.subscription button {
+  text-align: center;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: hsl(71, 73%, 54%);
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+}
+
+.whyus {
+  background-color: rgba(42, 178, 175, 0.85);
+  padding: 2rem;
+  flex-basis: 50%;
+  text-align: left;
+  border-radius: 0 0 8px 0;
+}
+
+.whyus h3 {
+  margin-top: 0;
+}
+
+.whyus ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #efefef;
+}
+
+@media only screen and (max-width: 608px) {
+  .card-container {
+    width: 90%;
+    height: 90%;
+  }
+
+  .header {
+    padding: 1rem;
+    line-height: 30px;
+  }
+
+  .content {
+    flex-flow: row wrap;
+  }
+
+  .subscription,
+  .whyus {
+    flex-basis: 100%;
+    border-radius: 0;
+  }
+}
