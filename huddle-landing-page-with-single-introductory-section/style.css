@@ -1,0 +1,150 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fefefe;
+  line-height: 1.8;
+  height: 100%;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-image: url("./images/bg-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(257, 40%, 49%);
+  background-blend-mode: screen;
+}
+
+.sub-container {
+  width: 1440px;
+  height: 100%;
+}
+
+.nav {
+  margin: 5rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 5rem;
+  margin: 0 auto;
+}
+
+.mockups,
+.content {
+  flex-basis: 100%;
+}
+
+.mockups img {
+  width: 100%;
+}
+
+.content h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border: 0;
+  width: 200px;
+  font-size: 1rem;
+  color: hsl(257, 40%, 49%);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fefefe;
+}
+
+.footer {
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.footer i {
+  font-size: 2.5rem;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.footer i:hover {
+  color: hsl(300, 69%, 71%);
+}
+
+@media only screen and (max-width: 1308px) {
+  body {
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .sub-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+  }
+
+  .nav {
+    margin: 0;
+  }
+
+  .hero {
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  .content h1 {
+    font-size: 1.6rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .footer i {
+    font-size: 1.5rem;
+  }
+}
