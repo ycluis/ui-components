@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Fraunces", serif;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  height: 450px;
+  width: 600px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem;
+}
+
+.img-container,
+.content-container {
+  flex-basis: 50%;
+}
+
+.img-container img {
+  width: 100%;
+  border-radius: 5px 0 0 5px;
+}
+
+.mobile {
+  display: none;
+}
+
+.content-container {
+  padding: 2rem;
+}
+
+.content-container h2,
+.content-container p {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+}
+
+h1.price {
+  display: inline-block;
+  color: hsl(158, 36%, 37%);
+}
+
+span.prev-price {
+  display: inline-block;
+  text-decoration: line-through;
+  margin-left: 1rem;
+  color: hsl(228, 12%, 48%);
+  font-size: 16px;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.cta img {
+  padding: 0.2rem;
+}
+
+.cta p {
+  color: hsl(0, 0%, 100%);
+}
+
+.cta:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+
+@media only screen and (max-width: 638px) {
+  .card-container {
+    height: 80%;
+  }
+
+  .img-container,
+  .content-container {
+    flex-basis: 100%;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .content-container {
+    padding: 1rem;
+  }
+}
