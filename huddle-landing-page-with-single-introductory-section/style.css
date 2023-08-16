@@ -8,11 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-html,
-body {
-  overflow: hidden;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -117,7 +112,7 @@ button:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 2rem;
+    margin: 0 2rem;
   }
 
   .nav {
