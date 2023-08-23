@@ -38,7 +38,8 @@ body {
   border-radius: 10px;
 }
 
-.qr-container h2 {
+.qr-container h1 {
+  font-size: 22px;
   font-weight: 700;
   color: hsl(218, 44%, 22%);
 }
@@ -46,4 +47,5 @@ body {
 .qr-container h3 {
   font-weight: 400;
   color: hsl(220, 15%, 55%);
+  margin-top: 0;
 }
