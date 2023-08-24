@@ -41,14 +41,13 @@ body {
 .qr-container h1 {
   font-size: 22px;
   font-weight: 700;
-  margin: 14px 0;
   color: hsl(218, 44%, 22%);
+  margin: 18px 0;
 }
 
 .qr-container p {
   font-size: 15px;
   font-weight: 400;
   color: hsl(220, 15%, 55%);
-  margin-top: 0;
   padding: 0 16px;
 }
