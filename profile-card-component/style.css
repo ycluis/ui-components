@@ -87,7 +87,7 @@ span {
   width: 100%;
 }
 
-.intro-wrapper h3 {
+.intro-wrapper h1 {
   font-weight: bold;
   color: hsl(229, 23%, 23%);
   margin-bottom: 0;
@@ -116,9 +116,10 @@ span {
   text-align: center;
   gap: 30px;
   margin-top: 20px;
+  padding: 0 50px;
 }
 
-.stats-wrapper h3,
+.stats-wrapper h2,
 .stats-wrapper p {
   margin: 0;
 }
