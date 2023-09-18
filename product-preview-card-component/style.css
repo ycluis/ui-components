@@ -17,7 +17,7 @@ body {
 }
 
 .main-container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +36,12 @@ body {
 .img-container,
 .content-container {
   flex-basis: 50%;
+}
+
+.content-container h2 {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  font-weight: 100;
 }
 
 .img-container img {
